@@ -7,7 +7,7 @@ modalities:
 - RNA
 - ATAC
 - MULTI
-lib_struct: https://teichlab.github.io/scg_lib_structs/methods_html/10xChromium_multiome.html
+lib_struct:
 assay_spec:
 - !Region
   region_id: RNA
