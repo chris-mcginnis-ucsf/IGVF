@@ -1,4 +1,7 @@
 !Assay
+seqspec_version: 0.0.0
+assay: 10x-ATAC-RNA-MULTI
+sequencer: Illumina NovaSeq X
 name: 10x-ATAC-RNA-MULTI
 doi: 10.1038/s41592-019-0433-8
 publication_date: 17 June 2019
