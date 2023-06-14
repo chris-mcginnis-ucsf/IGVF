@@ -7,15 +7,15 @@ doi: https://doi.org/10.1038/s41592-019-0433-8
 publication_date: 17 June 2019
 description: Single Cell Multiome ATAC + Gene Expression + MULTI-seq
 modalities:
-- rna
-- atac
-- tag
-lib_struct: None
-assay_spec: None
+- RNA
+- ATAC
+- MULTI
+lib_struct:
+assay_spec:
 - !Region
-  region_id: rna
-  region_type: rna
-  name: rna
+  region_id: RNA
+  region_type: RNA
+  name: RNA
   sequence_type: joined
   sequence: AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNNNNNNNNNNNNNNNNNNNNNXAGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNNNATCTCGTATGCCGTCTTCTGCTTG
   min_len: 134
@@ -32,7 +32,7 @@ assay_spec: None
     max_len: 29
     onlist: null
     regions: null
-    parent_id: rna
+    parent_id: RNA
   - !Region
     region_id: truseq_read1
     region_type: truseq_read1
@@ -43,7 +43,7 @@ assay_spec: None
     max_len: 10
     onlist: null
     regions: null
-    parent_id: rna
+    parent_id: RNA
   - !Region
     region_id: R1.fastq.gz
     region_type: fastq
@@ -110,7 +110,7 @@ assay_spec: None
     max_len: 34
     onlist: null
     regions: null
-    parent_id: rna
+    parent_id: RNA
   - !Region
     region_id: I1.fastq.gz
     region_type: fastq
@@ -144,11 +144,11 @@ assay_spec: None
     max_len: 24
     onlist: null
     regions: null
-    parent_id: rna
+    parent_id: RNA
 - !Region
-  region_id: atac
-  region_type: atac
-  name: atac
+  region_id: ATAC
+  region_type: ATAC
+  name: ATAC
   sequence_type: joined
   sequence: AATGATACGGCGACCACCGAGATCTACACNNNNNNNNNNNNNNNNCGCGTCTGTCGTCGGCAGCGTCAGATGTGTATAAGAGACAGXXCTGTCTCTTATACACATCTCCGAGCCCACGAGACNNNNNNNNATCTCGTATGCCGTCTTCTGCTTG
   min_len: 179
@@ -165,7 +165,7 @@ assay_spec: None
     max_len: 29
     onlist: null
     regions: null
-    parent_id: atac
+    parent_id: ATAC
   - !Region
     region_id: I2.fastq.gz
     region_type: fastq
@@ -175,7 +175,7 @@ assay_spec: None
     min_len: 16
     max_len: 16
     onlist: null
-    parent_id: atac
+    parent_id: ATAC
     regions:
     - !Region
       region_id: cell_bc
@@ -200,7 +200,7 @@ assay_spec: None
     max_len: 33
     onlist: null
     regions: null
-    parent_id: atac
+    parent_id: ATAC
   - !Region
     region_id: nextera_read1
     region_type: nextera_read1
@@ -340,10 +340,10 @@ assay_spec: None
     max_len: 24
     onlist: null
     regions: null
-    parent_id: atac
+    parent_id: ATAC
 - !Region
-  region_id: tag
-  region_type: tag
+  region_id: MULTI
+  region_type: barcode
   name: MULTI sample barcode
   sequence_type: joined
   sequence: AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNNNNNNNNNNNNNNNNNNNNNXAGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNNNATCTCGTATGCCGTCTTCTGCTTG
@@ -361,7 +361,7 @@ assay_spec: None
     max_len: 29
     onlist: null
     regions: null
-    parent_id: tag
+    parent_id: MULTI
   - !Region
     region_id: truseq_read1
     region_type: truseq_read1
@@ -372,7 +372,7 @@ assay_spec: None
     max_len: 10
     onlist: null
     regions: null
-    parent_id: tag
+    parent_id: MULTI
   - !Region
     region_id: R1.fastq.gz
     region_type: fastq
@@ -418,8 +418,8 @@ assay_spec: None
     onlist: null
     regions:
     - !Region
-      region_id: tag
-      region_type: tag
+      region_id: multibc
+      region_type: barcode
       name: multibc
       sequence_type: onlist
       sequence: NNNNNNNN
@@ -441,7 +441,7 @@ assay_spec: None
     max_len: 34
     onlist: null
     regions: null
-    parent_id: tag
+    parent_id: MULTI
   - !Region
     region_id: I1.fastq.gz
     region_type: fastq
@@ -475,4 +475,4 @@ assay_spec: None
     max_len: 24
     onlist: null
     regions: null
-    parent_id: tag
+    parent_id: MULTI
