@@ -2,8 +2,8 @@
 seqspec_version: 0.0.0
 assay: 10x-ATAC-RNA-MULTI
 sequencer: Illumina NovaSeq X
-name: 10x-ATAC-RNA-MULTI
-doi: 10.1038/s41592-019-0433-8
+name: 10x-ATAC-RNA-MULTI/Illumina
+doi: https://doi.org/10.1038/s41592-019-0433-8
 publication_date: 17 June 2019
 description: Single Cell Multiome ATAC + Gene Expression + MULTI-seq
 modalities:
@@ -343,8 +343,8 @@ assay_spec:
     parent_id: ATAC
 - !Region
   region_id: MULTI
-  region_type: MULTI
-  name: MULTI
+  region_type: barcode
+  name: MULTI sample barcode
   sequence_type: joined
   sequence: AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNNNNNNNNNNNNNNNNNNNNNXAGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNNNATCTCGTATGCCGTCTTCTGCTTG
   min_len: 134
@@ -453,9 +453,9 @@ assay_spec:
     onlist: null
     regions:
     - !Region
-      region_id: index7
+      region_id: truseq_smallrna_read2
       region_type: index7
-      name: Truseq Small RNA Read 2
+      name: truseq_smallrna_read2
       sequence_type: onlist
       sequence: NNNNNNNN
       min_len: 8
