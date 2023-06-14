@@ -7,15 +7,15 @@ doi: https://doi.org/10.1038/s41592-019-0433-8
 publication_date: 17 June 2019
 description: Single Cell Multiome ATAC + Gene Expression + MULTI-seq
 modalities:
-- RNA
-- ATAC
-- MULTI
-lib_struct:
-assay_spec:
+- rna
+- mutli
+- tag
+lib_struct: None
+assay_spec: None
 - !Region
-  region_id: RNA
-  region_type: RNA
-  name: RNA
+  region_id: rna
+  region_type: rna
+  name: rna
   sequence_type: joined
   sequence: AATGATACGGCGACCACCGAGATCTACACTCTTTCCCTACACGACGCTCTTCCGATCTNNNNNNNNNNNNNNNNNNNNNNNNNNNNXAGATCGGAAGAGCACACGTCTGAACTCCAGTCACNNNNNNNNATCTCGTATGCCGTCTTCTGCTTG
   min_len: 134
